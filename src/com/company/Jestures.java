@@ -11,6 +11,7 @@ public class Jestures {
 
     Jestures(){}
 
+    //Подключение изображений
     public void setImages(){
         try
         {
@@ -20,7 +21,7 @@ public class Jestures {
 
     //Отрисовка изображений
     public void drawImages(Graphics g){
-        g.drawImage(backButton,500, 650,200,50,null);
+        g.drawImage(backButton,500, 700,200,50,null);
     }
 
     public void paint(Graphics g){

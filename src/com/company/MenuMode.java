@@ -62,6 +62,8 @@ public class MenuMode extends JComponent {
         /* Отрисовка режима в соответствии с флагом modeIndex
         0 - меню
         1 - обучение
+        11 - дактильная азбука (111)
+        12 - жесты
         2 - практика
         3 - слова
          */
@@ -75,9 +77,15 @@ public class MenuMode extends JComponent {
         if (ProgramExplorer.modeIndex==1) {
             learnMode.paint(g);
         }
+
         if (ProgramExplorer.modeIndex==11) {
             dactyl.paint(g);
         }
+
+        if (ProgramExplorer.modeIndex==111) {
+            dactyl.drawAlphabet(g);
+        }
+
         if (ProgramExplorer.modeIndex==12) {
             jestures.paint(g);
         }

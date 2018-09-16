@@ -46,9 +46,11 @@ public class ProgramExplorer extends JFrame {
                 System.out.println("click "+modeIndex);
             }
 
-            if ((modeIndex!=0)&&((X>500&&Y>650)&&(X<700&&Y<700))){
+            //Обработка нажатий мыши по кнопке НАЗАД
+            if ((modeIndex!=0)&&((X>500&&Y>700)&&(X<700&&Y<750))){
                 if(modeIndex==1) modeIndex=0;
                 if((modeIndex==11)||(modeIndex==12)) modeIndex=1;
+                if(modeIndex==111) modeIndex=11;
                 System.out.println("click "+modeIndex);
             }
 
@@ -57,6 +59,13 @@ public class ProgramExplorer extends JFrame {
                 modeIndex=11;
                 System.out.println("click "+modeIndex);
             }
+
+            //Обработка нажатий мыши по кнопкам в меню обучения
+            if ((modeIndex==11)&&((X>1000&&Y>100)&&(X<1100&&Y<200))){
+                modeIndex=111;
+                System.out.println("click "+modeIndex);
+            }
+
 
             //Обработка нажатий мыши по кнопкам в меню обучения
             if ((modeIndex==1)&&((X>350&&Y>450)&&(X<850&&Y<500))){

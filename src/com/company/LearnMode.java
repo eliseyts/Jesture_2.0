@@ -16,6 +16,7 @@ public class LearnMode extends JComponent {
 
     LearnMode(){}
 
+    //Подключение изображений
     public void setImages(){
         try
         {
@@ -29,10 +30,10 @@ public class LearnMode extends JComponent {
     public void drawImages(Graphics g){
         g.drawImage(dactylButton,350, 300,500,50,null);
         g.drawImage(jesturesButton,350, 450,500,50,null);
-        g.drawImage(backButton,500, 650,200,50,null);
+        g.drawImage(backButton,500, 700,200,50,null);
     }
 
-
+    //Графическая функция
     public void paint(Graphics g){
         setImages();
         drawImages(g);
